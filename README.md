@@ -17,7 +17,7 @@
 </p>
 
 ## Use
-### WebInterca
+### WebInterface
 Go to https://img.papamica.com and select your image.
 
 ### CLI
