@@ -1,6 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("indeximg.xml");
+$xmlDoc->load("list.xml");
 
 $x=$xmlDoc->getElementsByTagName('img');
 
