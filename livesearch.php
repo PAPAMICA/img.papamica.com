@@ -14,7 +14,8 @@ if (strlen($q)>0) {
     foreach($x->item($i)->attributes() as $a => $b) {
       if ($a=="name"){
         $y=$b
-      } elseif ($a=="link"){
+      } else 
+      {
         $z=$b
       }
     }
