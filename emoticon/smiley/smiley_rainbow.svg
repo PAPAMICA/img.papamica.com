@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFC764;}
+	.st1{fill:#424242;}
+	.st2{opacity:0.2;fill:#424242;}
+	.st3{opacity:0.8;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#424242;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#424242;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;}
+	.st7{fill:#FBFF66;}
+	.st8{fill:#93FF66;}
+	.st9{fill:#66DFFF;}
+	.st10{fill:#FF9566;}
+	.st11{fill:#FF7866;}
+</style>
+<g id="color">
+	<circle class="st0" cx="32" cy="32" r="26"/>
+	<path class="st1" d="M47,37c0,0,0,4.4-2.96,8.08c-0.56,0.71-1.24,1.39-2.04,1.99C39.79,48.78,36.6,50,32,50
+		c-4.78,0-7.93-1.52-10-3.51c-0.68-0.66-1.24-1.36-1.71-2.08C18,40.89,18,37,18,37H47z"/>
+	<path class="st2" d="M52.27,48.27C47.51,54.2,40.2,58,32,58C17.64,58,6,46.36,6,32c0-8.2,3.8-15.51,9.73-20.27
+		C12.14,16.18,10,21.84,10,28c0,14.36,11.64,26,26,26C42.16,54,47.82,51.86,52.27,48.27z"/>
+</g>
+<path id="light" class="st3" d="M47.558,16.445C43.576,12.463,38.076,10,32,10"/>
+<g id="eyes_x5F_color">
+	<circle class="st1" cx="18" cy="28" r="5"/>
+	<circle class="st1" cx="46" cy="28" r="5"/>
+</g>
+<g id="stroke">
+	<circle class="st4" cx="32" cy="32" r="26"/>
+	<path class="st5" d="M32,50c14,0,14-13,14-13H18C18,37,18,50,32,50"/>
+	<circle class="st4" cx="18" cy="28" r="5"/>
+	<circle class="st4" cx="46" cy="28" r="5"/>
+</g>
+<g id="eyes_x5F_light">
+	<circle class="st6" cx="18" cy="26" r="3"/>
+	<circle class="st6" cx="46" cy="26" r="3"/>
+</g>
+<g id="rainbow">
+	<rect x="30" y="41" class="st7" width="4" height="23"/>
+	<rect x="34" y="41" class="st8" width="4" height="23"/>
+	<rect x="38" y="41" class="st9" width="4" height="23"/>
+	<rect x="26" y="41" class="st10" width="4" height="23"/>
+	<rect x="22" y="41" class="st11" width="4" height="23"/>
+	<g>
+		<path class="st11" d="M22,41v4.04c-0.47-0.54-0.86-1.1-1.19-1.67L22,41z"/>
+		<path class="st2" d="M22,41v4.04c-0.47-0.54-0.86-1.1-1.19-1.67L22,41z"/>
+	</g>
+	<g>
+		<path class="st9" d="M43.55,44.11c-0.43,0.58-0.95,1.15-1.55,1.68V41L43.55,44.11z"/>
+		<path class="st2" d="M43.55,44.11c-0.43,0.58-0.95,1.15-1.55,1.68V41L43.55,44.11z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

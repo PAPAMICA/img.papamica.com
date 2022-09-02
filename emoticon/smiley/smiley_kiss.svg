@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFC764;}
+	.st1{opacity:0.2;fill:#424242;}
+	.st2{fill:#424242;}
+	.st3{opacity:0.8;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#424242;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#424242;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;}
+</style>
+<g id="color">
+	<circle class="st0" cx="32" cy="32" r="26"/>
+	<path class="st1" d="M52.27,48.27C47.51,54.2,40.2,58,32,58C17.64,58,6,46.36,6,32c0-8.2,3.8-15.51,9.73-20.27
+		C12.14,16.18,10,21.84,10,28c0,14.36,11.64,26,26,26C42.16,54,47.82,51.86,52.27,48.27z"/>
+</g>
+<g id="eyes_x5F_color">
+	<circle class="st2" cx="18" cy="29" r="3"/>
+	<circle class="st2" cx="46" cy="29" r="3"/>
+</g>
+<path id="light" class="st3" d="M47.558,16.445C43.576,12.463,38.076,10,32,10"/>
+<g id="stroke">
+	<circle class="st4" cx="32" cy="32" r="26"/>
+	<line class="st5" x1="28" y1="40" x2="36" y2="48"/>
+	<line class="st5" x1="36" y1="40" x2="28" y2="48"/>
+	<circle class="st4" cx="18" cy="29" r="3"/>
+	<circle class="st4" cx="46" cy="29" r="3"/>
+</g>
+<g id="eyes_x5F_light">
+	<circle class="st6" cx="17" cy="28" r="2"/>
+	<circle class="st6" cx="45" cy="28" r="2"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

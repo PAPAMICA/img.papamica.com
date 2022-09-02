@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF9566;}
+	.st1{opacity:0.2;fill:#424242;}
+	.st2{opacity:0.8;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:#424242;}
+	.st4{fill:none;stroke:#424242;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#424242;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;}
+</style>
+<g>
+	<g id="color">
+		<circle class="st0" cx="32" cy="32" r="26"/>
+		<path class="st1" d="M52.27,48.27C47.51,54.2,40.2,58,32,58C17.64,58,6,46.36,6,32c0-8.2,3.8-15.51,9.73-20.27
+			C12.14,16.18,10,21.84,10,28c0,14.36,11.64,26,26,26C42.16,54,47.82,51.86,52.27,48.27z"/>
+	</g>
+	<path id="light" class="st2" d="M47.558,16.445C43.576,12.463,38.076,10,32,10"/>
+	<g id="eyes_x5F_color">
+		<path class="st3" d="M16.918,25.201C15.796,25.635,15,26.725,15,28c0,1.657,1.343,3,3,3s3-1.343,3-3
+			c0-0.372-0.068-0.728-0.192-1.057"/>
+		<path class="st3" d="M43.192,26.941C43.068,27.27,43,27.627,43,28c0,1.657,1.343,3,3,3s3-1.343,3-3
+			c0-1.275-0.795-2.364-1.917-2.799"/>
+	</g>
+	<g id="stroke">
+		<circle class="st4" cx="32" cy="32" r="26"/>
+		<path class="st5" d="M20,42c0,0,2-5,13-5c10,0,12,5,12,5"/>
+		<path class="st4" d="M16.918,25.201C15.796,25.635,15,26.725,15,28c0,1.657,1.343,3,3,3s3-1.343,3-3
+			c0-0.372-0.068-0.728-0.192-1.057"/>
+		<path class="st4" d="M43.192,26.941C43.068,27.27,43,27.627,43,28c0,1.657,1.343,3,3,3s3-1.343,3-3
+			c0-1.275-0.795-2.364-1.917-2.799"/>
+		<path class="st5" d="M52,22c0,0-8,7-20,7s-20-7-20-7"/>
+	</g>
+	<g id="eyes_x5F_light">
+		<path class="st6" d="M19.88,27.67C19.61,28.44,18.86,29,18,29c-1.1,0-2-0.9-2-2c0-0.36,0.1-0.71,0.27-1
+			C17.33,26.57,18.53,27.14,19.88,27.67z"/>
+		<path class="st6" d="M48,27c0,1.1-0.9,2-2,2c-0.86,0-1.61-0.56-1.88-1.33c1.35-0.53,2.56-1.1,3.61-1.67C47.9,26.29,48,26.64,48,27
+			z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
