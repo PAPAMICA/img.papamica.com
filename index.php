@@ -44,26 +44,6 @@ $current_dir_name = basename($dir);
 $up_dir=dirname($dir);
 $up_url=($up_dir!=''&&$up_dir!='.')?$self.'?dir='.rawurlencode($up_dir):$self;
 
-$xml = new SimpleXMLElement('<xml/>');
-function listFolderFiles($dir, $xml) { 
-    foreach (new DirectoryIterator($dir) as $fileInfo) { 
-        if (!$fileInfo->isDot()) { 
-           $imglist = $xml->addChild('img');
-           $imglist->addChild('name', $fileInfo->getFilename());
-           $imglist->addChild('link', str_replace('/var/www/html/', '',$fileInfo->getPathname()));
-            if ($fileInfo->isDir()) { 
-                listFolderFiles($fileInfo->getPathname(), $xml); 
-            } 
-        } 
-    }
-} 
-listFolderFiles($path, $xml);
-
-
-$xml->asXML("indeximg.xml");
-
-
-
 
 // END PHP ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
