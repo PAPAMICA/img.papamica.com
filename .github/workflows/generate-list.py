@@ -21,6 +21,10 @@ for filename in sorted(glob.glob("./*/*.*", recursive = True)):
         img = imglist.createElement('img')
         img.setAttribute('name', os.path.basename(filename))
         img.setAttribute('link', filename[1:])
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 59f60ca6325bda0cbcb88b64109af4597b9f2b07
         xml.appendChild(img)
     except:
          print (f" ❌ {filename} error !")
