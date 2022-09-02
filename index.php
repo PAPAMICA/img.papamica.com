@@ -25,7 +25,7 @@ if(isset($_GET['icon']))
 $self = basename(isset($_SERVER['SCRIPT_FILENAME']) ? $_SERVER['SCRIPT_FILENAME'] : __FILE__);
 $sitename='PAPAMICA - CDN';
 $date='d-M-y'; // date format
-$ignore=array('.','..','.htaccess','index.php','icon.php','livesearch.php','indeximg.xml',$self); // ignore these files
+$ignore=array('.','..','.htaccess','index.php','icon.php','livesearch.php','list.xml','.github/','.git/',$self); // ignore these files
 
 // End configs
 $root=dirname(__FILE__);
