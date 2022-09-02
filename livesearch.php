@@ -13,10 +13,10 @@ if (strlen($q)>0) {
   for($i=0; $i<($x->length); $i++) {
     foreach($x->item($i)->attributes() as $a => $b) {
       if ($a=="name"){
-        $y=$b
+        $y=$b;
       } else 
       {
-        $z=$b
+        $z=$b;
       }
     }
     if ($y->item(0)->nodeType==1) {
