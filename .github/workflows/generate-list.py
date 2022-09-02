@@ -15,7 +15,7 @@ imglist = minidom.Document()
 
 xml = imglist.createElement('imglist') 
 imglist.appendChild(xml)
-for filename in sorted(glob.glob(os.getcwd() + "/*/*.*", recursive = True)):
+for filename in sorted(glob.glob(os.getcwd() + "./*/*.*", recursive = True)):
     try:
         print(os.path.basename(filename) + " " + (filename))
         img = imglist.createElement('img')
