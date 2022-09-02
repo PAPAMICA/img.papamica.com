@@ -11,8 +11,8 @@ $q=$_GET["q"];
 if (strlen($q)>0) {
   $hint="";
   for($i=0; $i<($x->length); $i++) {
-    $y=$x->item($i)->getElementsByTagName('name');
-    $z=$x->item($i)->getElementsByTagName('link');
+    $y=$x->item($i)->attributes('name');
+    $z=$x->item($i)->attributes('link');
     if ($y->item(0)->nodeType==1) {
       //find a link matching the search text
       if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
