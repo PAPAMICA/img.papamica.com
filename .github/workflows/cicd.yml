@@ -17,3 +17,4 @@ jobs:
           git add -A
           git commit -m "Automatic generation of the file list.xml"
           git push
+          curl https://img.papamica.com/pull.php
