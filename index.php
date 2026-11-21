@@ -28,11 +28,58 @@ $date='d-M-y'; // date format
 $ignore=array('.','..','.htaccess','README.md','list','pull.php','index.php','icon.php','livesearch.php','list.xml','.github','.git',$self); // ignore these files
 
 // End configs
+function html_escape($value)
+{
+	return htmlspecialchars((string)$value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}
+
+function js_encode($value)
+{
+	$json = json_encode((string)$value, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);
+	if ($json === false) {
+		return '""';
+	}
+	return $json;
+}
+
+function path_is_within($path, $root)
+{
+	$path = rtrim(str_replace('\\', '/', $path), '/');
+	$root = rtrim(str_replace('\\', '/', $root), '/');
+	if ($root === '') {
+		return $path === '' || (isset($path[0]) && $path[0] === '/');
+	}
+	if ($path === $root) {
+		return true;
+	}
+	return strncmp($path, $root . '/', strlen($root) + 1) === 0;
+}
+
 $root=dirname(__FILE__);
-$dir=isset($_GET['dir'])?$_GET['dir']:'';if(strstr($dir,'..'))$dir='';
-$path="$root/$dir/";
+$rootReal=realpath($root);
+if(!isset($_GET['dir']) || $_GET['dir']===''){
+	$requested='';
+}elseif(!is_string($_GET['dir']) || strpos($_GET['dir'], "\0")!==false){
+	exit('Directory does not exist.');
+}else{
+	$requested=$_GET['dir'];
+}
+$resolved=($rootReal!==false) ? realpath($rootReal.'/'.$requested) : false;
+if($resolved===false || !is_dir($resolved) || !path_is_within($resolved, $rootReal))exit('Directory does not exist.');
+$rootNorm=rtrim(str_replace('\\', '/', $rootReal), '/');
+$pathNorm=rtrim(str_replace('\\', '/', $resolved), '/');
+$canonical=($pathNorm===$rootNorm) ? '' : substr($pathNorm, strlen($rootNorm)+1);
+// Keep the requested string for in-root paths that do not climb ("logo/", "./logo"),
+// so links stay the same. A ".." segment is replaced by the canonical relative path.
+$requestedNorm=str_replace('\\', '/', $requested);
+if($requested==='' || preg_match('#(^|/)\.\.(/|$)#', $requestedNorm)){
+	$dir=$canonical;
+}else{
+	$dir=$requested;
+}
+$path=$resolved.'/';
 $dirs=$files=array();
-if(!is_dir($path)||false==($h=opendir($path)))exit('Directory does not exist.');
+if(false==($h=opendir($path)))exit('Directory does not exist.');
 while(false!==($f=readdir($h)))
 {
 	if(in_array($f,$ignore))continue;
@@ -51,7 +98,7 @@ $up_url=($up_dir!=''&&$up_dir!='.')?$self.'?dir='.rawurlencode($up_dir):$self;
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 
-<title><?php print$current_dir_name==''?'Directory list':$current_dir_name?></title>
+<title><?php echo $current_dir_name===''?'Directory list':html_escape($current_dir_name); ?></title>
 <style type="text/css">
 body { font-family: tahoma, verdana, arial; font-size: 1em; color: black; padding-top: 8px; cursor: default; background-color: #fff; }
 #idx { border: 3px solid #fff; width: 100%; }
@@ -123,7 +170,7 @@ function _head()
 	_tpg=Math.ceil((_files.length+_dirs.length)/_ppg);
 	idx.innerHTML='<div class="rounded gray" style="padding:5px 10px 5px 7px;color:#202020">' +
 		'<p class="left">' +
-			'<strong><?php print$current_dir_name==''?$sitename:$current_dir_name?></strong><?php print$dir!=''?'&nbsp; (<a href="'.$up_url.'">Back</a>)':''?><br />' + (_files.length+_dirs.length) + ' objects in this folder, ' + _s(_tsize) + ' total.' +
+			'<strong>' + <?php echo js_encode(html_escape($current_dir_name===''?$sitename:$current_dir_name)); ?> + '</strong>' + <?php echo js_encode($dir!==''?'&nbsp; (<a href="'.html_escape($up_url).'">Back</a>)':''); ?> + '<br />' + (_files.length+_dirs.length) + ' objects in this folder, ' + _s(_tsize) + ' total.' +
 		'</p>' +
 		'<p class="middle">' +
 			'<form><input class="search" type="text" size="30" onkeyup="showResult(this.value)"><div style="width: 32%; margin-left: 34%; border: 1px solid rgb(165, 172, 178);" id="livesearch"></div></form>' +
@@ -162,8 +209,8 @@ function _tbl()
 }
 
 
-<?php foreach($dirs as $d) { print sprintf("_d('%s','%s','%s');\n",addslashes($d['name']),date($date,$d['date']),addslashes($d['url'])); } ?>
-<?php foreach($files as $f) { print sprintf("_f('%s',%d,'%s','%s',%d);\n",addslashes($f['name']),$f['size'],date($date,$f['date']),addslashes($f['url']),$f['date']); } ?>
+<?php foreach($dirs as $d) { echo '_d('.js_encode(html_escape($d['name'])).','.js_encode(date($date,$d['date'])).','.js_encode(html_escape($d['url'])).");\n"; } ?>
+<?php foreach($files as $f) { echo '_f('.js_encode(html_escape($f['name'])).','.(int)$f['size'].','.js_encode(date($date,$f['date'])).','.js_encode(html_escape($f['url'])).','.(int)$f['date'].");\n"; } ?>
 
 window.onload=function()
 {
